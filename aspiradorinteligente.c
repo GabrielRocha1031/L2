@@ -65,6 +65,15 @@ int main(){
                 x++;
             }
         }
+        if(x < 0){ //Não permite atravessar a parede
+            x = 0;
+        }else if(x>tamanhox){
+            x = tamanhox;
+        }else if(y<0){
+            y = 0;
+        }else if(y>tamanhoy){
+            y = tamanhoy;
+        }
     }
     if(direcao_atual == 0){
         printf("N ");
